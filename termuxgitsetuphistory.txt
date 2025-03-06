@@ -1,0 +1,397 @@
+Welcome to Termux!
+
+Docs:       https://termux.dev/docs
+Donate:     https://termux.dev/donate
+Community:  https://termux.dev/community
+
+Working with packages:
+
+ - Search:  pkg search <query>
+ - Install: pkg install <package>
+ - Upgrade: pkg upgrade
+
+Subscribing to additional repositories:
+
+ - Root:    pkg install root-repo
+ - X11:     pkg install x11-repo
+
+For fixing any repository issues,
+try 'termux-change-repo' command.
+
+Report issues at https://termux.dev/issues
+~ $ cd
+~ $ ls
+storage
+~ $ cd storage
+~/storage $ ls
+dcim  downloads  movies  music  pictures  shared
+~/storage $ cd dcim
+~/storage/dcim $ ls
+'Backup 1'   FilmoraGo                         Screenshots
+ Camera     'KeePass Original Database.kdbx'   WPS
+ Facebook    Restored                          elif.c
+~/storage/dcim $ mkdir GitFiles
+~/storage/dcim $ ls
+'Backup 1'   GitFiles                          WPS
+ Camera     'KeePass Original Database.kdbx'   elif.c
+ Facebook    Restored
+ FilmoraGo   Screenshots
+~/storage/dcim $ cd GitFiles/
+~/.../dcim/GitFiles $ touch credit_Card_Validator.c
+~/.../dcim/GitFiles $ ls
+credit_Card_Validator.c
+~/.../dcim/GitFiles $ touch membership_Group_Validator.c
+~/.../dcim/GitFiles $ ls
+credit_Card_Validator.c  membership_Group_Validator.c
+~/.../dcim/GitFiles $ git init
+The program git is not installed. Install it by executing:
+ pkg install git
+~/.../dcim/GitFiles $ pkg install git
+No mirror or mirror group selected. You might want to select one by running 'termux-change-repo'
+Testing the available mirrors:
+[*] (10) https://packages-cf.termux.dev/apt/termux-main: ok
+[*] (1) https://mirror.textcord.xyz/termux/termux-main: bad
+[*] (1) https://mirror.nevacloud.com/applications/termux/termux-main: ok
+[*] (1) https://mirrors.nguyenhoang.cloud/termux/termux-main: ok
+[*] (1) https://mirror.twds.com.tw/termux/termux-main: ok
+[*] (1) https://linux.domainesia.com/applications/termux/termux-main: ok
+[*] (1) https://tmx.xvx.my.id/apt/termux-main: ok
+[*] (1) https://mirror.freedif.org/termux/termux-main: ok
+[*] (1) https://mirrors.cbrx.io/apt/termux/termux-main: ok
+[*] (1) https://mirrors.in.sahilister.net/termux/termux-main/: ok
+[*] (1) https://mirror.albony.in/termux/termux-main: ok
+[*] (1) https://mirror.bardia.tech/termux/termux-main: bad
+[*] (1) https://mirrors.sdu.edu.cn/termux/termux-main: ok
+[*] (1) https://mirrors.sau.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.nju.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.sustech.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.pku.edu.cn/termux/termux-main/: ok
+[*] (1) https://mirror.sjtu.edu.cn/termux/termux-main/: bad
+[*] (1) https://mirror.iscas.ac.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.ustc.edu.cn/termux/termux-main: ok
+[*] (1) https://mirrors.aliyun.com/termux/termux-main: ok
+[*] (1) https://mirrors.qvq.net.cn/termux/termux-main: bad
+[*] (1) https://mirrors.cqupt.edu.cn/termux/termux-main: bad
+[*] (1) https://mirrors.zju.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.hust.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.bfsu.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirror.nyist.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main: ok
+[*] (1) https://ftp.agdsn.de/termux/termux-main: ok
+[*] (4) https://grimler.se/termux/termux-main: ok
+[*] (1) https://ro.mirror.flokinet.net/termux/termux-main: ok
+[*] (1) https://mirrors.cfe.re/termux/termux-main: bad
+[*] (1) https://mirror.termux.dev/termux-main: bad
+[*] (1) https://termux.3san.dev/termux/termux-main: ok
+[*] (1) https://mirror.bouwhuis.network/termux/termux-main: ok
+[*] (1) https://mirror.accum.se/mirror/termux.dev/termux-main: ok
+[*] (1) https://termux.mentality.rip/termux-main: ok
+[*] (1) https://is.mirror.flokinet.net/termux/termux-main: ok
+[*] (1) https://md.mirrors.hacktegic.com/termux/termux-main: bad
+[*] (1) https://termux.astra.in.ua/apt/termux-main: bad
+[*] (1) https://mirror.mwt.me/termux/main: ok
+[*] (1) https://mirrors.medzik.dev/termux/termux-main: ok
+[*] (1) https://packages.termux.dev/apt/termux-main: ok
+[*] (1) https://mirror.sunred.org/termux/termux-main: ok
+[*] (1) https://mirrors.de.sahilister.net/termux/termux-main: ok
+[*] (1) https://mirror.leitecastro.com/termux/termux-main: ok
+[*] (1) https://termux.cdn.lumito.net/termux-main: ok
+[*] (1) https://nl.mirror.flokinet.net/termux/termux-main: ok
+[*] (1) https://ftp.fau.de/termux/termux-main: ok
+[*] (1) https://termux.librehat.com/apt/termux-main: ok
+[*] (1) https://mirror.autkin.net/termux/termux-main: bad
+[*] (1) https://mirror.polido.pt/termux/termux-main: bad
+[*] (1) https://dl.kcubeterm.com/termux-main: bad
+[*] (1) https://termux.danyael.xyz/termux/termux-main: ok
+[*] (1) https://mirror.mwt.me/termux/main: ok
+[*] (1) https://mirrors.utermux.dev/termux/termux-main: ok
+[*] (1) https://mirror.vern.cc/termux/termux-main: ok
+[*] (1) https://plug-mirror.rcac.purdue.edu/termux/termux-main: ok
+[*] (1) https://mirror.quantum5.ca/termux/termux-main: ok
+[*] (1) https://mirror.fcix.net/termux/termux-main: ok
+[*] (1) https://mirror.csclub.uwaterloo.ca/termux/termux-main: ok
+[*] (1) https://mirror.endianness.com/termux/termux-main: ok
+[*] (1) https://mirrors.rda.run/termux/termux-main: ok
+[*] (1) https://repository.su/termux/termux-main/: ok
+[*] (1) http://mirror.mephi.ru/termux/termux-main: ok
+Picking mirror: (60) /data/data/com.termux/files/usr/etc/termux/mirrors/north_america/mirror.csclub.uwaterloo.ca
+Get:1 https://mirror.csclub.uwaterloo.ca/termux/termux-main stable InRelease [14.0 kB]
+Get:2 https://mirror.csclub.uwaterloo.ca/termux/termux-main stable/main aarch64 Packages [536 kB]
+Fetched 550 kB in 12s (46.0 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+48 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  perl
+The following NEW packages will be installed:
+  git
+0 upgraded, 1 newly installed, 0 to remove and 48 not upgraded.
+Need to get 0 B/4203 kB of archives.
+After this operation, 23.6 MB of additional disk space will be used.
+Selecting previously unselected package git.
+(Reading database ... 21112 files and directories currently installed.)
+Preparing to unpack .../git_2.48.1_aarch64.deb ...
+Unpacking git (2.48.1) ...
+Setting up git (2.48.1) ...
+~/.../dcim/GitFiles $ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /storage/emulated/0/DCIM/GitFiles/.git/
+~/.../dcim/GitFiles $ git config --global user.name "OptimusWest007"
+~/.../dcim/GitFiles $ git config --global user.email "samwesa77@proton.me"
+~/.../dcim/GitFiles $ git status
+fatal: detected dubious ownership in repository at '/storage/emulated/0/DCIM/GitFiles'
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory /storage/emulated/0/DCIM/GitFiles
+~/.../dcim/GitFiles $ git config --global --add safe.directory /storage/emulated/0/DCIM/GitFiles
+~/.../dcim/GitFiles $ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        credit_Card_Validator.c
+        membership_Group_Validator.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+~/.../dcim/GitFiles $ git branch -m main
+~/.../dcim/GitFiles $ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        credit_Card_Validator.c
+        membership_Group_Validator.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+~/.../dcim/GitFiles $ ssh-keygen -t ed25519 -C "samwesa77@proton.me"                                                                Generating public/private ed25519 key pair.
+Enter file in which to save the key (/data/data/com.termux/files/home/.ssh/id_ed25519):
+Enter passphrase for "/data/data/com.termux/files/home/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /data/data/com.termux/files/home/.ssh/id_ed25519
+Your public key has been saved in /data/data/com.termux/files/home/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:KeKEc4oXeAo/FsdYi9etslL3BuBaa9n7DG1zZ4zwoaE samwesa77@proton.me
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|    .            |
+| . *.o . .       |
+|o O.O.o S .      |
+|.= @+.o= = +     |
+|o *+o=Eo= + +    |
+| oo.+o.+oo o     |
+|   o. .+o        |
++----[SHA256]-----+
+~/.../dcim/GitFiles $ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPoeZ4k3wc1tEbfUUM30GoCr6wEawCfK6PwO5mDa6W3B samwesa77@proton.me
+~/.../dcim/GitFiles $ git add .
+~/.../dcim/GitFiles $ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   credit_Card_Validator.c
+        new file:   membership_Group_Validator.c
+
+~/.../dcim/GitFiles $ git commit -m "elif statements codegym"
+[main (root-commit) a212d5a] elif statements codegym
+ 2 files changed, 58 insertions(+)
+ create mode 100644 credit_Card_Validator.c
+ create mode 100644 membership_Group_Validator.c
+~/.../dcim/GitFiles $ git status
+On branch main
+nothing to commit, working tree clean
+~/.../dcim/GitFiles $ git remote add origin https://github.com/OptimusWest007/C-CodeGym.git
+~/.../dcim/GitFiles $ git push -u origin main
+Username for 'https://github.com': OptimusWest007
+Password for 'https://OptimusWest007@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/OptimusWest007/C-CodeGym.git/'
+~/.../dcim/GitFiles $ git remote -v
+origin  https://github.com/OptimusWest007/C-CodeGym.git (fetch)
+origin  https://github.com/OptimusWest007/C-CodeGym.git (push)
+~/.../dcim/GitFiles $ git remote set-url origin git@github.com:OptimusWest007/C-CodeGym.git
+~/.../dcim/GitFiles $ git remote -v
+origin  git@github.com:OptimusWest007/C-CodeGym.git (fetch)
+origin  git@github.com:OptimusWest007/C-CodeGym.git (push)
+~/.../dcim/GitFiles $ ssh-add -l
+Could not open a connection to your authentication agent.
+~/.../dcim/GitFiles $ ssh-add -l
+Could not open a connection to your authentication agent.
+~/.../dcim/GitFiles $ eval "$(ssh-agent -s)"
+Agent pid 14582
+~/.../dcim/GitFiles $ ssh-add ~/.ssh/id_rsa
+/data/data/com.termux/files/home/.ssh/id_rsa: No such file or directory
+~/.../dcim/GitFiles $ ssh-add ~/.ssh/id_rsa
+/data/data/com.termux/files/home/.ssh/id_rsa: No such file or directory
+~/.../dcim/GitFiles $ ssh-add ~/.shh/id_ed25519.pub
+/data/data/com.termux/files/home/.shh/id_ed25519.pub: No such file or directory
+~/.../dcim/GitFiles $ ssh-add ~/.shh/id_ed25519.pubssh-add /data/data/com.termux/files/home/.ssh/id_ed25519
+/data/data/com.termux/files/home/.shh/id_ed25519.pubssh-add: No such file or directory
+Identity added: /data/data/com.termux/files/home/.ssh/id_ed25519 (samwesa77@proton.me)
+~/.../dcim/GitFiles $ ssh-add -l
+256 SHA256:KeKEc4oXeAo/FsdYi9etslL3BuBaa9n7DG1zZ4zwoaE samwesa77@proton.me (ED25519)
+~/.../dcim/GitFiles $ ssh -T git@github.com
+The authenticity of host 'github.com (20.87.245.0)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi OptimusWest007! You've successfully authenticated, but GitHub does not provide shell access.
+~/.../dcim/GitFiles $ git push -u origin main
+To github.com:OptimusWest007/C-CodeGym.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:OptimusWest007/C-CodeGym.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+~/.../dcim/GitFiles $ git pull -u origin main
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]progress       force progress reporting
+    --[no-]recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --[no-]rebase[=(false|true|merges|interactive)]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --[no-]stat           show a diffstat at the end of the merge
+    --[no-]log[=<n>]      add (at most <n>) entries from shortlog to merge commit message
+    --[no-]signoff[=...]  add a Signed-off-by trailer
+    --[no-]squash         create a single commit instead of doing a merge
+    --[no-]commit         perform a commit if the merge succeeds (default)
+    --[no-]edit           edit message before committing
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]ff             allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --[no-]verify         control use of pre-merge-commit and commit-msg hooks
+    --[no-]verify-signatures
+                          verify that the named commit has a valid GPG signature
+    --[no-]autostash      automatically stash/stash pop before and after
+    -s, --[no-]strategy <strategy>
+                          merge strategy to use
+    -X, --[no-]strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --[no-]all            fetch from all remotes
+    -a, --[no-]append     append to .git/FETCH_HEAD instead of overwriting
+    --[no-]upload-pack <path>
+                          path to upload pack on remote end
+    -f, --[no-]force      force overwrite of local branch
+    -t, --[no-]tags       fetch all tags and associated objects
+    -p, --[no-]prune      prune remote-tracking branches no longer on remote
+    -j, --[no-]jobs[=<n>] number of submodules pulled in parallel
+    --[no-]dry-run        dry run
+    -k, --[no-]keep       keep downloaded pack
+    --[no-]depth <depth>  deepen history of shallow clone
+    --[no-]shallow-since <time>
+                          deepen history of shallow repository based on time
+    --[no-]shallow-exclude <ref>
+                          deepen history of shallow clone, excluding ref
+    --[no-]deepen <n>     deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --[no-]update-shallow accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -o, --[no-]server-option <server-specific>
+                          option to transmit
+    -4, --[no-]ipv4       use IPv4 addresses only
+    -6, --[no-]ipv6       use IPv6 addresses only
+    --[no-]negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --[no-]show-forced-updates
+                          check for forced-updates on all updated branches
+    --[no-]set-upstream   set upstream for git pull/fetch
+
+~/.../dcim/GitFiles $ git push --help
+warning: failed to exec 'man': No such file or directory
+fatal: no man viewer handled the request
+~/.../dcim/GitFiles $ git push --help
+warning: failed to exec 'man': No such file or directory
+fatal: no man viewer handled the request
+~/.../dcim/GitFiles $ git fetch origin
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 908 bytes | 6.00 KiB/s, done.
+From github.com:OptimusWest007/C-CodeGym
+ * [new branch]      main       -> origin/main
+~/.../dcim/GitFiles $ git merge main
+Already up to date.
+~/.../dcim/GitFiles $ git push -u origin main
+To github.com:OptimusWest007/C-CodeGym.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:OptimusWest007/C-CodeGym.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+~/.../dcim/GitFiles $ git pull origin main
+From github.com:OptimusWest007/C-CodeGym
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+~/.../dcim/GitFiles $ git config pull.rebase false
+~/.../dcim/GitFiles $ git pull origin main
+From github.com:OptimusWest007/C-CodeGym
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+~/.../dcim/GitFiles $ git config pull.rebase true
+~/.../dcim/GitFiles $ git pull origin main
+From github.com:OptimusWest007/C-CodeGym
+ * branch            main       -> FETCH_HEAD
+Successfully rebased and updated refs/heads/main.
+~/.../dcim/GitFiles $ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 994 bytes | 71.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:OptimusWest007/C-CodeGym.git
+   001fef5..4cdcd43  main -> main
+branch 'main' set up to track 'origin/main'.
+~/.../dcim/GitFiles $
